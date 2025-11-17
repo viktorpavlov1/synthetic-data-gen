@@ -1,0 +1,60 @@
+# Default parameters for the pipeline
+
+# Image generation parameters
+image_generation:
+  model: "stable_diffusion"  # Options: stable_diffusion, sdxl, qwen, flux
+  num_images: 10
+  image_size: 600  # HAM10000 format: 600x450 (width x height)
+  prompt_template: "A high-quality dermoscopic image of a {lesion_type} skin lesion, medical photography, detailed, professional"
+  lesion_types:
+    - "melanoma"
+    - "benign"
+    - "atypical"
+  batch_size: 4
+  seed: 42
+
+# Classification parameters
+classification:
+  model: "resnet50"  # Options: vgg16, inception_v3, resnet50
+  batch_size: 32
+  num_classes: 2  # Adjust based on ENHANCE dataset
+
+# Training parameters
+training:
+  model: "resnet50"  # Options: vgg16, inception_v3, resnet50
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 10
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  use_synthetic_data: true
+  synthetic_data_ratio: 0.3  # Ratio of synthetic to real data
+
+# Model storage
+model_storage:
+  base_path: "data/06_models"
+  save_metadata: true
+
+# Fine-tuning parameters
+fine_tuning:
+  enabled: false
+  dataset_path: "data/00_external/dataset"  # Path to your dataset
+  base_model: "runwayml/stable-diffusion-v1-5"
+  output_dir: "data/06_models/fine_tuned_sd"
+  num_epochs: 10
+  learning_rate: 0.0001
+  batch_size: 1
+  lora_rank: 4
+  lora_alpha: 32
+  output_size: 512
+  max_images: null  # null = use all images
+  use_fine_tuned: false  # Whether to use fine-tuned model for generation
+
+# HAM10000 integration
+ham10000:
+  dataset_path: "data/00_external/HAM10000"
+  use_ham10000_prompts: true  # Use HAM10000 metadata for prompt generation
+  auto_fine_tune: false  # Automatically fine-tune on HAM10000
+  fine_tuned_model_path: "data/06_models/fine_tuned_sd_ham10000"
+

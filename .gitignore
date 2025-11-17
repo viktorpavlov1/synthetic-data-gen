@@ -1,0 +1,164 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Data directories (keep structure, ignore contents)
+# Raw and processed data
+data/01_raw/
+data/02_intermediate/
+data/03_primary/
+data/04_feature/
+data/05_model_input/
+data/07_model_output/
+
+# Large external datasets (HAM10000 images)
+data/00_external/HAM10000/images/
+data/00_external/HAM10000/Image_segmentations/
+data/00_external/HAM10000/ISIC2018_Task3_Test_Images/
+
+# Model files (keep config files, ignore weights)
+data/06_models/**/*.pth
+data/06_models/**/*.pt
+data/06_models/**/*.ckpt
+data/06_models/**/*.safetensors
+data/06_models/**/*.bin
+data/06_models/**/pytorch_model.bin
+data/06_models/**/model.safetensors
+
+# Hugging Face cache
+.cache/
+huggingface/
+.huggingface/
+transformers_cache/
+
+# Model downloads (Hugging Face models are cached elsewhere)
+models/
+checkpoints/
+
+# Generated images (in data directories)
+data/**/*.png
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.gif
+data/**/*.bmp
+
+# Test outputs with images
+test_outputs/**/*.png
+test_outputs/**/*.jpg
+test_outputs/**/*.jpeg
+
+# Test outputs
+test_outputs/
+test_results/
+*.test
+
+# Kedro
+.kedro/
+kedro.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+.prof
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Keep empty directories structure
+!data/**/.gitkeep
+!logs/.gitkeep
+

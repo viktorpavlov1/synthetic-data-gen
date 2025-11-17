@@ -1,0 +1,17 @@
+{
+  "num_images": 2000,
+  "sample_prompts": [
+    "skin lesion image",
+    "skin lesion image",
+    "skin lesion image",
+    "skin lesion image",
+    "skin lesion image"
+  ],
+  "image_paths": [
+    "data\\00_external\\HAM10000\\images\\ISIC_0027419.jpg",
+    "data\\00_external\\HAM10000\\images\\ISIC_0025030.jpg",
+    "data\\00_external\\HAM10000\\images\\ISIC_0026769.jpg",
+    "data\\00_external\\HAM10000\\images\\ISIC_0025661.jpg",
+    "data\\00_external\\HAM10000\\images\\ISIC_0031633.jpg"
+  ]
+}

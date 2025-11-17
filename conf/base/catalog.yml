@@ -1,0 +1,52 @@
+# Data catalog for Kedro pipeline
+# Generated images
+generated_images@PickleDataSet:
+  type: pickle.PickleDataSet
+  filepath: data/01_raw/generated_images.pkl
+  versioned: true
+
+# Processed images
+processed_images@PickleDataSet:
+  type: pickle.PickleDataSet
+  filepath: data/02_intermediate/processed_images.pkl
+  versioned: true
+
+# Training datasets
+training_dataset@PickleDataSet:
+  type: pickle.PickleDataSet
+  filepath: data/03_primary/training_dataset.pkl
+  versioned: true
+
+# Model inputs
+model_input_data@PickleDataSet:
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/model_input.pkl
+  versioned: true
+
+# Classification results
+classification_results@CSVDataSet:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_output/classification_results.csv
+  versioned: true
+
+# Training results
+training_results@JSONDataSet:
+  type: json.JSONDataSet
+  filepath: data/07_model_output/training_results.json
+  versioned: true
+
+# Evaluation metrics
+evaluation_metrics@PickleDataSet:
+  type: pickle.PickleDataSet
+  filepath: data/07_model_output/evaluation_metrics.pkl
+  versioned: true
+
+# Classification summary
+classification_summary@JSONDataSet:
+  type: json.JSONDataSet
+  filepath: data/07_model_output/classification_summary.json
+  versioned: true
+
+# Model artifacts (will be handled by model_storage utility)
+# Models are saved directly to data/06_models/ with custom naming
+
