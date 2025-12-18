@@ -165,20 +165,10 @@ def generate_prompts_with_distribution(
         distribution = {dx: proportion for dx in selected_diagnoses}
     
     # Generate prompts according to distribution
+    from synthetic_data_gen.utils.math_utils import distribute_counts
+    diagnosis_counts = distribute_counts(num_prompts, distribution)
+    
     prompts = []
-    diagnosis_counts = {}
-    
-    for dx in selected_diagnoses:
-        count = int(num_prompts * distribution.get(dx, 0))
-        diagnosis_counts[dx] = count
-    
-    # Adjust for rounding errors
-    total_assigned = sum(diagnosis_counts.values())
-    if total_assigned < num_prompts:
-        remaining = num_prompts - total_assigned
-        # Distribute remaining to most common diagnosis
-        most_common = max(distribution.items(), key=lambda x: x[1])[0]
-        diagnosis_counts[most_common] += remaining
     
     # Generate prompts
     for dx, count in diagnosis_counts.items():

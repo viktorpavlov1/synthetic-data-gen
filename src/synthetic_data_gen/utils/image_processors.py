@@ -22,7 +22,8 @@ def get_preprocessing_transform(image_size: int = 224, normalize: bool = True) -
         Composed transform
     """
     transform_list = [
-        transforms.Resize((image_size, image_size)),
+        transforms.Resize(image_size),
+        transforms.CenterCrop(image_size),
         transforms.ToTensor(),
     ]
     

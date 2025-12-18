@@ -282,17 +282,9 @@ def generate_prompts_with_references(
     reference_images = []
     
     # Calculate how many of each diagnosis for prompts
-    diagnosis_counts = {}
-    for dx in selected_diagnoses:
-        count = int(num_prompts * distribution.get(dx, 0))
-        diagnosis_counts[dx] = count
-    
-    # Adjust for rounding
-    total_assigned = sum(diagnosis_counts.values())
-    if total_assigned < num_prompts:
-        remaining = num_prompts - total_assigned
-        most_common = max(distribution.items(), key=lambda x: x[1])[0]
-        diagnosis_counts[most_common] += remaining
+    # Calculate how many of each diagnosis for prompts
+    from synthetic_data_gen.utils.math_utils import distribute_counts
+    diagnosis_counts = distribute_counts(num_prompts, distribution)
     
     # Generate prompts and match with reference images
     for dx, count in diagnosis_counts.items():

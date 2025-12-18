@@ -105,6 +105,19 @@ def generate_stable_diffusion_images(
         except Exception as e:
             logger.warning(f"Could not enable CPU offloading: {e}. Loading to GPU directly.")
             pipe = pipe.to(device)
+        
+        # Enable memory optimizations
+        try:
+            pipe.enable_attention_slicing(slice_size="auto")
+            logger.info("Enabled attention slicing for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable attention slicing: {e}")
+        
+        try:
+            pipe.enable_vae_tiling()
+            logger.info("Enabled VAE tiling for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable VAE tiling: {e}")
     else:
         pipe = pipe.to(device)
     
@@ -221,6 +234,20 @@ def generate_stable_diffusion_img2img(
         requires_safety_checker=False
     )
     pipe = pipe.to(device)
+    
+    # Enable memory optimizations
+    if device == "cuda":
+        try:
+            pipe.enable_attention_slicing(slice_size="auto")
+            logger.info("Enabled attention slicing for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable attention slicing: {e}")
+        
+        try:
+            pipe.enable_vae_tiling()
+            logger.info("Enabled VAE tiling for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable VAE tiling: {e}")
     
     if seed is not None:
         torch.manual_seed(seed)
@@ -360,6 +387,19 @@ def generate_sdxl_images(
         except Exception as e:
             logger.warning(f"Could not enable CPU offloading: {e}. Loading to GPU directly.")
             pipe = pipe.to(device)
+        
+        # Enable memory optimizations
+        try:
+            pipe.enable_attention_slicing(slice_size="auto")
+            logger.info("Enabled attention slicing for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable attention slicing: {e}")
+        
+        try:
+            pipe.enable_vae_tiling()
+            logger.info("Enabled VAE tiling for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable VAE tiling: {e}")
     else:
         pipe = pipe.to(device)
     
@@ -392,10 +432,10 @@ def generate_sdxl_images(
         try:
             with torch.no_grad():
                 # HAM10000 format: 600x450 (4:3 aspect ratio)
-                # SD3.5 requires dimensions divisible by 8
-                # Using 600x448 (closest to 600x450 that meets the requirement)
-                height = 448  # Adjusted from 450 to be divisible by 8
-                width = 600   # Already divisible by 8
+                # SD3.5 requires dimensions divisible by 16
+                # Using 592x448 (closest to 600x450 that meets the requirement)
+                height = 448  # Divisible by 16 (448/16=28)
+                width = 592   # Divisible by 16 (592/16=37)
                 
                 # Strong negative prompt to exclude body parts
                 negative_prompt = "face, facial features, eyes, nose, mouth, lips, teeth, tongue, head, person, body, torso, chest, back, limbs, arms, legs, hands, feet, fingers, toes, full body, portrait, human figure, human face, facial expression, smile, frown, clothing, clothes, background, landscape, artistic, painting, drawing, illustration, cartoon, anime, 3d render, blurry, low quality, distorted, deformed, anatomy, human anatomy, body parts, facial anatomy, oral cavity, dental, teeth close-up, lipstick, makeup, beauty, cosmetic"
@@ -515,6 +555,20 @@ def generate_sdxl_img2img(
         )
         pipe = pipe.to(device)
     
+    # Enable memory optimizations
+    if device == "cuda":
+        try:
+            pipe.enable_attention_slicing(slice_size="auto")
+            logger.info("Enabled attention slicing for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable attention slicing: {e}")
+        
+        try:
+            pipe.enable_vae_tiling()
+            logger.info("Enabled VAE tiling for memory optimization")
+        except Exception as e:
+            logger.warning(f"Could not enable VAE tiling: {e}")
+    
     if seed is not None:
         torch.manual_seed(seed)
         random.seed(seed)
@@ -538,8 +592,8 @@ def generate_sdxl_img2img(
         
         # Prepare reference image
         ref_img = ref_img.convert('RGB')
-        # Resize to generation size (600x448 for SDXL compatibility)
-        ref_img = ref_img.resize((600, 448), Image.Resampling.LANCZOS)
+        # Resize to generation size (592x448 for SD3.5 compatibility - divisible by 16)
+        ref_img = ref_img.resize((592, 448), Image.Resampling.LANCZOS)
         
         try:
             with torch.no_grad():
@@ -562,7 +616,7 @@ def generate_sdxl_img2img(
                         prompt=prompt,
                         negative_prompt=negative_prompt,
                         height=448,
-                        width=600,
+                        width=592,
                         num_inference_steps=28,
                         guidance_scale=3.5
                     ).images[0]
@@ -689,25 +743,29 @@ def generate_qwen_images(
         )
         logger.info("Pipeline loaded, setting up device...")
         
-        # For Qwen-Image, CPU offloading can be very slow, so we'll try GPU first
-        # Only use CPU offloading if explicitly needed (OOM errors)
+        # QWEN is a very large model (~20GB+), so use CPU offloading from the start
+        # This keeps model components on CPU and only moves them to GPU when needed
         if device == "cuda":
+            logger.info("Using CPU offloading for QWEN (large model, prevents OOM)")
             try:
-                # Try loading directly to GPU first (faster)
-                logger.info("Loading model to GPU...")
-                pipe = pipe.to(device)
-                logger.info("Model loaded to GPU successfully")
-            except torch_module.cuda.OutOfMemoryError:
-                # Fall back to CPU offloading if OOM
-                logger.warning("GPU OOM detected, falling back to CPU offloading (will be slower)")
                 pipe.enable_model_cpu_offload()
+                logger.info("Enabled CPU offloading successfully")
             except Exception as e:
-                logger.warning(f"Error loading to GPU: {e}. Trying CPU offloading...")
-                try:
-                    pipe.enable_model_cpu_offload()
-                except Exception as e2:
-                    logger.error(f"Could not enable CPU offloading either: {e2}")
-                    raise
+                logger.warning(f"Could not enable CPU offloading: {e}. Loading to GPU (may OOM)...")
+                pipe = pipe.to(device)
+            
+            # Enable memory optimizations
+            try:
+                pipe.enable_attention_slicing(slice_size="auto")
+                logger.info("Enabled attention slicing for memory optimization")
+            except Exception as e:
+                logger.warning(f"Could not enable attention slicing: {e}")
+            
+            try:
+                pipe.enable_vae_tiling()
+                logger.info("Enabled VAE tiling for memory optimization")
+            except Exception as e:
+                logger.warning(f"Could not enable VAE tiling: {e}")
         else:
             pipe = pipe.to(device)
             logger.info("Model loaded to CPU")
@@ -942,6 +1000,19 @@ def generate_flux_images(
             except Exception as e:
                 logger.warning(f"Could not enable CPU offloading: {e}. Loading to GPU directly.")
                 pipe = pipe.to(device)
+            
+            # Enable memory optimizations
+            try:
+                pipe.enable_attention_slicing(slice_size="auto")
+                logger.info("Enabled attention slicing for memory optimization")
+            except Exception as e:
+                logger.warning(f"Could not enable attention slicing: {e}")
+            
+            try:
+                pipe.enable_vae_tiling()
+                logger.info("Enabled VAE tiling for memory optimization")
+            except Exception as e:
+                logger.warning(f"Could not enable VAE tiling: {e}")
         else:
             pipe = pipe.to(device)
         
@@ -1075,7 +1146,7 @@ def generate_images(
             reference_images=reference_images,
             img2img_strength=img2img_strength
         )
-    elif model_name == "sdxl":
+    elif model_name == "sd3.5":
         return generate_sdxl_images(
             prompts, num_images, image_size, batch_size, seed,
             reference_images=reference_images,
@@ -1091,7 +1162,7 @@ def generate_images(
         )
     else:
         raise ValueError(f"Unknown generation model: {model_name}. "
-                       f"Supported: stable_diffusion, sdxl, qwen, flux")
+                       f"Supported: stable_diffusion, sd3.5, qwen, flux")
 
 
 def create_prompts(
