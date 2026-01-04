@@ -130,39 +130,9 @@ def compare_with_ham10000(
     if not ham_loader:
         return {'ssim': 0.0, 'color_similarity': 0.0, 'shape_similarity': 0.0}
         
-    # Get reference images
-    ref_images_data = ham_loader.load_images_with_metadata(
-        max_images=None, # Load metadata first to sample
-        lesion_types=[diagnosis]
-    )
-    
-    if not ref_images_data:
-        logger.warning(f"No reference images found for diagnosis {diagnosis}")
-        return {'ssim': 0.0, 'color_similarity': 0.0, 'shape_similarity': 0.0}
-        
-    # Sample random references (if we have more than needed, otherwise take all)
-    # Note: load_images_with_metadata actually loads images if max_images was None/large?
-    # Ah, looking at the previous view_file, if max_images is None it might load ALL? 
-    # That would be slow if HAM10000 is large.
-    # Checks: `ham_loader` implementation loads images immediately.
-    # We should optimize this to NOT load all images, but `ham_loader.load_images_with_metadata`
-    # structure seems to do that.
-    # Let's check `ham_loader` behavior again?
-    # It filters metadata then iterates and loads.
-    # We should only load needed ones.
-    # We can use the existing method with a small max_images, but it takes the HEAD (first N).
-    # That's not random.
-    # We might need to modify or just accept first N for now, or shuffle metadata inside loader?
-    # For now let's just use `max_images=num_references` to be fast, even if not random.
-    # Ideally we'd add `random_sample=True` to loader, but I won't modify loader right now if I can avoid it.
-    
-    # Actually, we can just request slightly more and pick?
-    # Or just use the first N. It's a "same-type" comparison, first N is fine for POC.
-    
-    # Wait, the loader loads images into memory. If I call it with max_images=5, it's fast.
-    
-    references = ham_loader.load_images_with_metadata(
-        max_images=num_references,
+    # Use efficient sampling
+    references = ham_loader.sample_images(
+        count=num_references,
         lesion_types=[diagnosis]
     )
     

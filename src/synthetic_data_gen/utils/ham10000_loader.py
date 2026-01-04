@@ -156,6 +156,64 @@ class HAM10000Loader:
         
         logger.info(f"Successfully loaded {len(images)} images")
         return images
+
+    def sample_images(
+        self,
+        count: int,
+        lesion_types: Optional[List[str]] = None,
+        localization: Optional[str] = None
+    ) -> List[Dict[str, Any]]:
+        """
+        Efficiently sample random images matching criteria without loading everything.
+        
+        Args:
+            count: Number of images to sample
+            lesion_types: Filter by lesion types
+            localization: Filter by localization
+            
+        Returns:
+            List of image dictionaries with metadata
+        """
+        if self.metadata is None:
+            return []
+            
+        df = self.metadata.copy()
+        
+        if lesion_types:
+            df = df[df['dx'].isin(lesion_types)]
+            
+        if localization:
+            df = df[df['localization'] == localization]
+            
+        if len(df) == 0:
+            return []
+            
+        # Sample metadata first
+        sample_size = min(count, len(df))
+        sampled_df = df.sample(n=sample_size)
+        
+        images = []
+        for _, row in sampled_df.iterrows():
+            image_id = row['image_id']
+            image_path = self.images_dir / f"{image_id}.jpg"
+            
+            if image_path.exists():
+                try:
+                    img = Image.open(image_path).convert('RGB')
+                    img_data = {
+                        'image': img,
+                        'path': str(image_path),
+                        'filename': image_path.name,
+                        'image_id': image_id,
+                        'diagnosis': row.get('dx', ''),
+                        'diagnosis_full': DX_MAPPING.get(row.get('dx', ''), row.get('dx', '')),
+                        'localization': row.get('localization', 'unknown')
+                    }
+                    images.append(img_data)
+                except Exception as e:
+                    logger.warning(f"Could not load image {image_path}: {e}")
+                    
+        return images
     
     def get_statistics(self) -> Dict[str, Any]:
         """Get dataset statistics."""

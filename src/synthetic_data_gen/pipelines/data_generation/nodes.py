@@ -23,6 +23,9 @@ import logging
 from tqdm import tqdm
 import random
 
+# Suppress tokenizer warnings about length (handled by LPW pipeline)
+logging.getLogger("transformers.tokenization_utils_base").setLevel(logging.ERROR)
+
 logger = logging.getLogger(__name__)
 
 
@@ -95,8 +98,10 @@ def generate_stable_diffusion_images(
         model_id,
         torch_dtype=torch.float16 if device == "cuda" else torch.float32,
         safety_checker=None,
-        requires_safety_checker=False
+        requires_safety_checker=False,
+        custom_pipeline="lpw_stable_diffusion"
     )
+    logger.info(f"Loaded pipeline type: {type(pipe)}")
     
     # Use CPU offloading if available to save VRAM
     if device == "cuda":
@@ -138,9 +143,9 @@ def generate_stable_diffusion_images(
     for batch_idx in tqdm(range(num_batches), desc="Generating images"):
         batch_prompts = []
         for i in range(batch_size):
-            if len(generated_images) >= num_images:
+            if len(generated_images) + len(batch_prompts) >= num_images:
                 break
-            prompt_idx = len(generated_images) % len(prompts)
+            prompt_idx = (len(generated_images) + len(batch_prompts)) % len(prompts)
             batch_prompts.append(prompts[prompt_idx])
         
         if not batch_prompts:
@@ -420,9 +425,9 @@ def generate_sdxl_images(
     for batch_idx in tqdm(range(num_batches), desc="Generating images"):
         batch_prompts = []
         for i in range(batch_size):
-            if len(generated_images) >= num_images:
+            if len(generated_images) + len(batch_prompts) >= num_images:
                 break
-            prompt_idx = len(generated_images) % len(prompts)
+            prompt_idx = (len(generated_images) + len(batch_prompts)) % len(prompts)
             batch_prompts.append(prompts[prompt_idx])
         
         if not batch_prompts:

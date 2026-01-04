@@ -39,3 +39,6 @@ bitsandbytes>=0.41.0  # For 8-bit training (optional but recommended)
 # Optional: For better performance
 # xformers>=0.0.20  # For faster attention in diffusion models (optional)
 
+
+# PDF Reporting
+fpdf>=1.7.2
