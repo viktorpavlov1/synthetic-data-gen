@@ -162,3 +162,25 @@ dmypy.json
 !data/**/.gitkeep
 !logs/.gitkeep
 
+# Force include all documentation
+!documentation/
+!documentation/**
+
+# Ignore images in experiments folders
+# Exclude images in ANY experiments folder, including those in detailed paths
+**/experiments/**/*.png
+**/experiments/**/*.jpg
+**/experiments/**/*.jpeg
+**/experiments/**/*.gif
+**/experiments/**/*.bmp
+experiments/**/*.png
+experiments/**/*.jpg
+experiments/**/*.jpeg
+experiments/**/*.gif
+experiments/**/*.bmp
+documentation/experiments/**/*.png
+documentation/experiments/**/*.jpg
+documentation/experiments/**/*.jpeg
+documentation/experiments/**/*.gif
+documentation/experiments/**/*.bmp
+

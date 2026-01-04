@@ -1,0 +1,588 @@
+{
+  "run_id": "experiment_1_20251218_182958",
+  "timestamp": "182958",
+  "config": {
+    "experiment": "experiment_1",
+    "models": [
+      "sd"
+    ],
+    "templates": [
+      "template_1",
+      "template_2",
+      "template_3"
+    ]
+  },
+  "results": [
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single melanocytic nevus, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "nv",
+      "inferred_diagnosis": "nv",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_000.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_000_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_000_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_000_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_000_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_000_4.png"
+      ],
+      "ssim": 0.18934846994410764,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.05933928748950803,
+      "performance": {
+        "total_time_seconds": 8.730143070220947,
+        "seconds_per_image": 8.730143070220947,
+        "avg_power_watts": 85.173125,
+        "peak_power_watts": 175.07,
+        "total_energy_wh": 0.20654821305217014,
+        "energy_per_image_wh": 0.20654821305217014
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single melanoma, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "mel",
+      "inferred_diagnosis": "mel",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_001.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_001_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_001_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_001_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_001_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_001_4.png"
+      ],
+      "ssim": 0.4222315872172568,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.01797529183004999,
+      "performance": {
+        "total_time_seconds": 6.376938104629517,
+        "seconds_per_image": 6.376938104629517,
+        "avg_power_watts": 103.43,
+        "peak_power_watts": 174.99,
+        "total_energy_wh": 0.1832129744893975,
+        "energy_per_image_wh": 0.1832129744893975
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single benign keratosis, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bkl",
+      "inferred_diagnosis": "bkl",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_002.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_002_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_002_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_002_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_002_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_002_4.png"
+      ],
+      "ssim": 0.035964734132965366,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.019919255152464673,
+      "performance": {
+        "total_time_seconds": 6.511468887329102,
+        "seconds_per_image": 6.511468887329102,
+        "avg_power_watts": 102.81666666666665,
+        "peak_power_watts": 174.68,
+        "total_energy_wh": 0.18596875724969084,
+        "energy_per_image_wh": 0.18596875724969084
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single basal cell carcinoma, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bcc",
+      "inferred_diagnosis": "bcc",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_003.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_003_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_003_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_003_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_003_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_003_4.png"
+      ],
+      "ssim": 0.28700061453442255,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.014212420540094011,
+      "performance": {
+        "total_time_seconds": 6.777039289474487,
+        "seconds_per_image": 6.777039289474487,
+        "avg_power_watts": 99.69769230769231,
+        "peak_power_watts": 174.71,
+        "total_energy_wh": 0.18768199384421363,
+        "energy_per_image_wh": 0.18768199384421363
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single actinic keratosis, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "akiec",
+      "inferred_diagnosis": "akiec",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_004.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_004_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_004_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_004_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_004_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_004_4.png"
+      ],
+      "ssim": 0.147160102347069,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.0303048181627111,
+      "performance": {
+        "total_time_seconds": 6.532750368118286,
+        "seconds_per_image": 6.532750368118286,
+        "avg_power_watts": 100.63749999999999,
+        "peak_power_watts": 174.92,
+        "total_energy_wh": 0.18262212921430665,
+        "energy_per_image_wh": 0.18262212921430665
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single vascular lesion, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "vasc",
+      "inferred_diagnosis": "vasc",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_005.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_005_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_005_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_005_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_005_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_005_4.png"
+      ],
+      "ssim": 0.15098578821836042,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.017378806636822907,
+      "performance": {
+        "total_time_seconds": 6.3611578941345215,
+        "seconds_per_image": 6.3611578941345215,
+        "avg_power_watts": 101.83416666666666,
+        "peak_power_watts": 174.73,
+        "total_energy_wh": 0.179939781440077,
+        "energy_per_image_wh": 0.179939781440077
+      }
+    },
+    {
+      "prompt": "Gnenerate a dermoscopic skin lesion of a single dermatofibroma, extreme close-up macro, ISIC-style, skin only, no body parts, lesion visible, clinical lighting, sharp focus, clinical photo",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "df",
+      "inferred_diagnosis": "df",
+      "template": "template_1",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_006.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_006_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_006_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_006_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_006_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_006_4.png"
+      ],
+      "ssim": 0.4188311773950189,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.017380533545087708,
+      "performance": {
+        "total_time_seconds": 6.38158917427063,
+        "seconds_per_image": 6.38158917427063,
+        "avg_power_watts": 99.23916666666666,
+        "peak_power_watts": 174.65,
+        "total_energy_wh": 0.17591766435101075,
+        "energy_per_image_wh": 0.17591766435101075
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single melanocytic nevus skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "nv",
+      "inferred_diagnosis": "nv",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_007.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_007_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_007_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_007_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_007_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_007_4.png"
+      ],
+      "ssim": 0.4697965954851685,
+      "color_similarity": 0.10773387245265575,
+      "shape_similarity": 0.054265934043739375,
+      "performance": {
+        "total_time_seconds": 7.048315048217773,
+        "seconds_per_image": 7.048315048217773,
+        "avg_power_watts": 100.39076923076922,
+        "peak_power_watts": 174.87,
+        "total_energy_wh": 0.19655160263094126,
+        "energy_per_image_wh": 0.19655160263094126
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single melanoma skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "mel",
+      "inferred_diagnosis": "mel",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_008.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_008_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_008_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_008_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_008_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_008_4.png"
+      ],
+      "ssim": 0.08412187697201602,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.02805286814133613,
+      "performance": {
+        "total_time_seconds": 6.646631240844727,
+        "seconds_per_image": 6.646631240844727,
+        "avg_power_watts": 101.95846153846153,
+        "peak_power_watts": 174.98,
+        "total_energy_wh": 0.18824452659166774,
+        "energy_per_image_wh": 0.18824452659166774
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single benign keratosis skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bkl",
+      "inferred_diagnosis": "bkl",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_009.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_009_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_009_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_009_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_009_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_009_4.png"
+      ],
+      "ssim": 0.41445504519546505,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.028301442262376353,
+      "performance": {
+        "total_time_seconds": 6.550317049026489,
+        "seconds_per_image": 6.550317049026489,
+        "avg_power_watts": 103.59750000000001,
+        "peak_power_watts": 175.01,
+        "total_energy_wh": 0.18849901957958937,
+        "energy_per_image_wh": 0.18849901957958937
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single basal cell carcinoma skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bcc",
+      "inferred_diagnosis": "bcc",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_010.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_010_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_010_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_010_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_010_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_010_4.png"
+      ],
+      "ssim": 0.41989564240348154,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.039095208222593505,
+      "performance": {
+        "total_time_seconds": 6.523902654647827,
+        "seconds_per_image": 6.523902654647827,
+        "avg_power_watts": 104.17,
+        "peak_power_watts": 175.8,
+        "total_energy_wh": 0.18877637209296227,
+        "energy_per_image_wh": 0.18877637209296227
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single actinic keratosis skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "akiec",
+      "inferred_diagnosis": "akiec",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_011.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_011_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_011_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_011_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_011_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_011_4.png"
+      ],
+      "ssim": 0.1370753808092159,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.024981620681930754,
+      "performance": {
+        "total_time_seconds": 6.425370454788208,
+        "seconds_per_image": 6.425370454788208,
+        "avg_power_watts": 102.6025,
+        "peak_power_watts": 175.1,
+        "total_energy_wh": 0.18312752002427976,
+        "energy_per_image_wh": 0.18312752002427976
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single vascular lesion skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "vasc",
+      "inferred_diagnosis": "vasc",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_012.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_012_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_012_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_012_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_012_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_012_4.png"
+      ],
+      "ssim": 0.37566465872291477,
+      "color_similarity": 0.08688354916099307,
+      "shape_similarity": 0.018755447069127885,
+      "performance": {
+        "total_time_seconds": 6.529857635498047,
+        "seconds_per_image": 6.529857635498047,
+        "avg_power_watts": 99.72916666666667,
+        "peak_power_watts": 175.0,
+        "total_energy_wh": 0.18089368345560852,
+        "energy_per_image_wh": 0.18089368345560852
+      }
+    },
+    {
+      "prompt": "ultra photorealistic ISIC-style dermoscopic close-up photograph of a single dermatofibroma skin lesion on real human skin, taken with a contact polarized dermatoscope using immersion fluid, lesion occupying about one third of the frame on a light pink skin background, full lesion visible and slightly off-center, fine body hairs crossing the lesion and surrounding skin, subtle surface reflections from the dermatoscope contact plate, even soft clinical lighting with no harsh shadows, razor-sharp focus over the entire lesion, natural skin texture and pores clearly visible, realistic color range from light pink to dark brown and black, irregular pigment network and internal structures clearly defined, unedited hospital dermatology research image, no artistic style, no filters, clear skin, no hairs",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "df",
+      "inferred_diagnosis": "df",
+      "template": "template_2",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_013.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_013_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_013_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_013_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_013_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_013_4.png"
+      ],
+      "ssim": 0.33478855192473683,
+      "color_similarity": 0.02313640846127661,
+      "shape_similarity": 0.03473383655932939,
+      "performance": {
+        "total_time_seconds": 6.749783277511597,
+        "seconds_per_image": 6.749783277511597,
+        "avg_power_watts": 106.57538461538462,
+        "peak_power_watts": 174.75,
+        "total_energy_wh": 0.19982243024202495,
+        "energy_per_image_wh": 0.19982243024202495
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single melanocytic nevus lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "nv",
+      "inferred_diagnosis": "nv",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_014.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_014_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_014_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_014_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_014_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_014_4.png"
+      ],
+      "ssim": 0.3325017883897424,
+      "color_similarity": 0.0,
+      "shape_similarity": 0.01331534290832807,
+      "performance": {
+        "total_time_seconds": 7.216621398925781,
+        "seconds_per_image": 7.216621398925781,
+        "avg_power_watts": 100.65785714285714,
+        "peak_power_watts": 175.14,
+        "total_energy_wh": 0.2017804571742103,
+        "energy_per_image_wh": 0.2017804571742103
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single melanoma lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "mel",
+      "inferred_diagnosis": "mel",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_015.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_015_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_015_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_015_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_015_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_015_4.png"
+      ],
+      "ssim": 0.030973889694363342,
+      "color_similarity": 0.06716959722205897,
+      "shape_similarity": 0.018716731827143125,
+      "performance": {
+        "total_time_seconds": 6.667608261108398,
+        "seconds_per_image": 6.667608261108398,
+        "avg_power_watts": 101.6607692307692,
+        "peak_power_watts": 175.2,
+        "total_energy_wh": 0.18828727354269756,
+        "energy_per_image_wh": 0.18828727354269756
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single benign keratosis lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bkl",
+      "inferred_diagnosis": "bkl",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_016.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_016_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_016_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_016_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_016_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_016_4.png"
+      ],
+      "ssim": 0.23815179144548612,
+      "color_similarity": 0.07813774484573557,
+      "shape_similarity": 0.042404325978759524,
+      "performance": {
+        "total_time_seconds": 7.292375802993774,
+        "seconds_per_image": 7.292375802993774,
+        "avg_power_watts": 96.40214285714285,
+        "peak_power_watts": 174.97,
+        "total_energy_wh": 0.19527795942449377,
+        "energy_per_image_wh": 0.19527795942449377
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single basal cell carcinoma lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "bcc",
+      "inferred_diagnosis": "bcc",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_017.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_017_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_017_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_017_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_017_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_017_4.png"
+      ],
+      "ssim": 0.1723990753291017,
+      "color_similarity": 1.0,
+      "shape_similarity": 0.016544342591051205,
+      "performance": {
+        "total_time_seconds": 6.5099992752075195,
+        "seconds_per_image": 6.5099992752075195,
+        "avg_power_watts": 103.81,
+        "peak_power_watts": 174.76,
+        "total_energy_wh": 0.18772306243313686,
+        "energy_per_image_wh": 0.18772306243313686
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single actinic keratosis lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "akiec",
+      "inferred_diagnosis": "akiec",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_018.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_018_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_018_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_018_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_018_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_018_4.png"
+      ],
+      "ssim": 0.15766621561522676,
+      "color_similarity": 0.1909190558173325,
+      "shape_similarity": 0.016764248727208345,
+      "performance": {
+        "total_time_seconds": 6.607031345367432,
+        "seconds_per_image": 6.607031345367432,
+        "avg_power_watts": 101.29461538461538,
+        "peak_power_watts": 174.77,
+        "total_energy_wh": 0.18590463860085887,
+        "energy_per_image_wh": 0.18590463860085887
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single vascular lesion lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "vasc",
+      "inferred_diagnosis": "vasc",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_019.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_019_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_019_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_019_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_019_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_019_4.png"
+      ],
+      "ssim": 0.31940280488185946,
+      "color_similarity": 0.0057496844003535755,
+      "shape_similarity": 0.035912142543400256,
+      "performance": {
+        "total_time_seconds": 6.376801252365112,
+        "seconds_per_image": 6.376801252365112,
+        "avg_power_watts": 103.26166666666666,
+        "peak_power_watts": 174.62,
+        "total_energy_wh": 0.18291086814480798,
+        "energy_per_image_wh": 0.18291086814480798
+      }
+    },
+    {
+      "prompt": "You are a clinical dermatology research photographer. Generate one ultra-photorealistic ISIC-style dermoscopic close-up photo of a single dermatofibroma lesion on real human skin, captured with a contact polarized dermatoscope using immersion fluid. Light pink skin background, natural pores/texture visible. Lesion occupies ~35% of the frame, fully visible, slightly off-center. Include a few fine body hairs crossing the lesion and nearby skin. Show subtle specular reflections from the dermatoscope contact plate. Even soft clinical lighting, no harsh shadows. Razor-sharp focus across the entire lesion (no blur). Realistic color variegation: light pink/tan to dark brown/black, with asymmetry, irregular border, atypical pigment network, and irregular internal structures (dots/globules, streaks). Looks like a raw, unedited hospital dermatology research image; no artistic style, no filters, no beautification.",
+      "model": "sd",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "diagnosis": "df",
+      "inferred_diagnosis": "df",
+      "template": "template_3",
+      "image_path": "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\image_020.png",
+      "reference_image_paths": [
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_020_0.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_020_1.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_020_2.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_020_3.png",
+        "C:\\Users\\Victor\\Desktop\\University\\Master\\Semester 1\\Synthetic Data Generation for Skin Cancer Detection\\POC\\synthetic-data-gen\\logs\\experiments\\experiment_1_20251218_182958\\images\\ref_020_4.png"
+      ],
+      "ssim": 0.2349610632301621,
+      "color_similarity": 0.007594622394516767,
+      "shape_similarity": 0.019341572742061407,
+      "performance": {
+        "total_time_seconds": 6.665207624435425,
+        "seconds_per_image": 6.665207624435425,
+        "avg_power_watts": 106.03538461538463,
+        "peak_power_watts": 174.85,
+        "total_energy_wh": 0.19631884833289012,
+        "energy_per_image_wh": 0.19631884833289012
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_images": 21,
+    "avg_ssim": 0.2558750882803877
+  }
+}
